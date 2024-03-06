@@ -1,0 +1,171 @@
+@import url('https://fonts.cdnfonts.com/css/noto-sans');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #000 !important;
+    background: #000 !important;
+}
+h2{
+    color: #000 !important;
+    font-family: "Noto Sans";
+    font-size: 36px !important; 
+    font-weight: 800 !important;
+}
+h3{
+    font-family: "Noto Sans";
+    font-size: 28px !important;
+    font-weight: 800 !important;
+}
+p{
+    color: #686868 !important;
+    font-family: "Noto Sans";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 200% !important; /* 36px */
+}
+div{
+    font-family: __font_ba605b, __font_Fallback_ba605b;
+    color: white;
+}
+.border_set{
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+/*     
+    background-color: none !important; */
+}
+.bg-color{
+    /* background-color: #000 !important;
+    background: #000 !important; */
+}
+.header{
+    position: fixed;
+    top: 0;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.block_ana{
+    opacity: 0 ;
+    transform: translateY(-20%);
+    transition: opacity 300ms ease, transform 300ms ease;
+    z-index: 10000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block_gp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    gap: 16px;
+    padding: 0 24px;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+.block_ana.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 将 canvas 放置在页面的最底层 */
+}
+.timeset{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+.section_block{
+    padding: 28px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#particles-js{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 将 canvas 放置在页面的最底层 */
+}
+/* 特效 */
+/* ---- reset ---- */
+
+body {
+	margin: 0;
+	font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+.icongroup{
+    z-index: 100000000000000 !important;
+    margin-top: 24px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.icongroup a{
+    transition: all 0.2s ease-in-out;
+}
+.icongroup a:hover{
+    transform: scale(1.2);
+}
+.logo{
+    max-width: 80vw;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+/* ---- stats.js ---- */
+
+.count-particles {
+	background: #000022;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 80px;
+	color: #13E8E9;
+	font-size: .8em;
+	text-align: left;
+	text-indent: 4px;
+	line-height: 14px;
+	padding-bottom: 2px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.js-count-particles {
+	font-size: 1.1em;
+}
+#stats, .count-particles {
+	-webkit-user-select: none;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#stats {
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+}
+.count-particles {
+	border-radius: 0 0 3px 3px;
+}
